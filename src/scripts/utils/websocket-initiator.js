@@ -1,8 +1,7 @@
-import CONFIG from '../globals/config';
 import NotificationHelper from './notification-helper';
+import CONFIG from '../globals/config';
 
-const WebsocketInitiator = {
-
+const WebSocketInitiator = {
   init(url) {
     const webSocket = new WebSocket(url);
     webSocket.onmessage = this._onMessageHandler;
@@ -10,8 +9,6 @@ const WebsocketInitiator = {
 
   _onMessageHandler(message) {
     const movie = JSON.parse(message.data);
-    console.log(movie);
-
     NotificationHelper.sendNotification({
       title: `${movie.title} is on cinema!`,
       options: {
@@ -22,4 +19,4 @@ const WebsocketInitiator = {
   },
 };
 
-export default WebsocketInitiator;
+export default WebSocketInitiator;
