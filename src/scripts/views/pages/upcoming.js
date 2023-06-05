@@ -1,5 +1,4 @@
-/* eslint-disable quotes */
-import TheMovieDbSource from "../../data/themoviedb-source";
+import TheMovieDbSource from '../../data/themoviedb-source';
 import { createMovieItemTemplate } from '../templates/template-creator';
 
 const Upcoming = {

@@ -30,7 +30,7 @@ const NotificationHelper = {
     }
 
     if (status === 'default') {
-      console.log('Permission Closed');
+      console.log('Permission closed');
     }
   },
 

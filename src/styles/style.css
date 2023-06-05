@@ -11,7 +11,6 @@ body {
   flex-direction: column;
 }
 
-
 /*
   AppBar
 */
@@ -95,6 +94,7 @@ main {
   font-weight: normal;
 }
 
+
 /*
   Movies
 */
@@ -105,7 +105,6 @@ main {
   gap: 16px;
   margin: 32px 0;
 }
-
 
 /*
   Movie Item
@@ -161,7 +160,6 @@ main {
   -webkit-box-orient: vertical;
 }
 
-
 /*
   Movie
 */
@@ -184,26 +182,6 @@ main {
   margin: 8px 0;
 }
 
-.like {
-  width: 55px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #db0000;
-
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  border-radius: 50%;
-  border: 0;
-
-  font-size: 18px;
-  color: white;
-  cursor: pointer;
-}
-
-
 
 /*
   Footer
@@ -211,13 +189,6 @@ main {
 
 footer {
   padding: 16px;
-}
-
-footer #footerTools {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
 }
 
 footer p {
@@ -231,32 +202,22 @@ footer p a {
 }
 
 /*
-  Buttoon
+   Like
 */
 
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #DB0000;
-  border: 1px solid #770000;
-  border-radius: 4px;
-
-  font-weight: 500;
-  font-size: 16px;
-  color: #ffffff;
-
+.like {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #db0000;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
-  transition: .15s ease-in-out;
-}
-
-.btn:hover {
-  background-color: #DB0000BB;
-}
-
-.btn:active {
-  background-color: #DB0000DD;
-}
-
-.btn:focus-visible {
-  outline: 3px solid #DB000055;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
